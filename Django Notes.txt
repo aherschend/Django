@@ -1,0 +1,17 @@
+when writing things down it is called a "get" request and a "post" request - will be on the interview
+GET - when web page is loaded, getting information from the database which loads into the browser
+POST - updating the database/sending information to the database so that it can post it
+
+A lot of benefits to web apps 
+
+We will create a "learning log" - an online journal system that lets you keep track of information you've learned
+about particular topics
+
+This is object oriented programming so we are going to use the . notation
+
+We will be creating MODELS for the data to work with
+    - models.py - where we define all of our tables (objects) - where we will write all the code
+        to create tables in our database but NOT A TABLE, an object with attributes
+    - views.py - python code that interacts with the html and the database
+    - urls.py
+    - templates
