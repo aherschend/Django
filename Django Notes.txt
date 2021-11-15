@@ -15,3 +15,11 @@ We will be creating MODELS for the data to work with
     - views.py - python code that interacts with the html and the database
     - urls.py
     - templates
+
+
+sqlite is a development database acts as a smaller version of the database 
+
+to run server: python manage.py runserver
+control c to stop it
+
+using main app and not learning log
