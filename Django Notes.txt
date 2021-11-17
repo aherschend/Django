@@ -23,3 +23,8 @@ to run server: python manage.py runserver
 control c to stop it
 
 using main app and not learning log
+
+Step #1 Make Migrations
+Step #2 Migrate
+
+-- to show up on the database we will need our admin.py file
