@@ -28,3 +28,25 @@ Step #1 Make Migrations
 Step #2 Migrate
 
 -- to show up on the database we will need our admin.py file
+
+
+** ON interview
+whenever we add pages to our project, we make an entry in the urls.py file which
+puts the location of the address and tell us the view as well as the file name,
+once we know the view that is associated, we have to create a function in the view
+template is the skeleton and the view adds the flesh 
+
+
+1. entry in functions
+2. define a topic function in the view file 
+3. create the topics in topics.html
+
+Template Tags v Template Variables 
+
+Tags: {%  %}
+Variables: {{  }}
+
+attributs from topics.html for the interview
+
+standard practice for a new page:
+urls, view, create html file
