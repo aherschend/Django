@@ -4,16 +4,18 @@
 <p>Topics</p>
 
 <ul>
-    {% for t in topics %}
+    {% for topic in topics %}
 
     <li> 
-        <a href="{% url 'MainApp:topic' t.id %}">{{ t }} </a>
+        <a href="{% url 'MainApp:topic' topic.id %}">{{ topic }} </a>
     </li>
     {% empty %} 
     <li> No topics have been added yet.</li>
     {% endfor %}
 
 </ul>
+
+<a href="{% url 'MainApp:new_topic' %}"> Add a new topic</a>
 
 {% endblock content %} z
 

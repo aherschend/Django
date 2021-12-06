@@ -6,12 +6,16 @@
 <ul>
     {% for e in entries %} 
     <li>
-        <p>{{e.text}} <p>
-        <p>{{e.date_added}}</p>
+        <p>{{e.text }} <p>
+        <p>{{e.date_added }}</p>
     </li>
     {% empty %}
     <li> There are no entries for this topic yet. </li>
     {% endfor %}
 </ul>
+
+<p>
+    <a href = "{% url 'MainApp:new_entry' topic.id %}"> Add a new entry</a>
+</p>
 
 {% endblock content %} z

@@ -50,3 +50,7 @@ attributs from topics.html for the interview
 
 standard practice for a new page:
 urls, view, create html file
+
+
+FORMS
+- Forms can be dangerous because of malicious code 
