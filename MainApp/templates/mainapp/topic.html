@@ -6,8 +6,9 @@
 <ul>
     {% for e in entries %} 
     <li>
-        <p>{{e.text }} <p>
         <p>{{e.date_added }}</p>
+        <p> {{e.text }}</p>
+        <a href="{% url 'MainApp:edit_entry' e.id %}"> Edit entry</a>
     </li>
     {% empty %}
     <li> There are no entries for this topic yet. </li>

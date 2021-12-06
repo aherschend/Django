@@ -13,5 +13,6 @@ class EntryForm(forms.ModelForm):
         model=Entry
         fields = ['text']
         labels = {'text': ''}
+        widgets = {'text': forms.Textarea(attrs={'cols': 80})}
 
         #define a widget so we can customize the label for the field itself
