@@ -40,8 +40,9 @@ def new_topic(request):
     else:
         form = TopicForm(data=request.POST)
         if form.is_valid(): #makes sure form complies with the rules of your model
-            new_topic = form.save()
-
+            new_topic = form.save(commit = False)
+            new_topic.owner = request.user
+            new_topic.save()
             #redirect user to main page
             return redirect('MainApp:topics')
 
@@ -70,6 +71,9 @@ def edit_entry(request, entry_id):
     #Edit an existing entry.
     entry = Entry.objects.get(id=entry_id)
     topic = entry.topic
+
+    if topic.owner != request.user:
+        raise Http404
 
     if request.method != 'POST':
         form = EntryForm(instance = entry)
